@@ -27,18 +27,35 @@
   </head>
 
   <body>
+    <header class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-3 col-md-2 align-self-center">
+            <img src="img/logo.png" class="img-fluid" />
+          </div>
+          <div class="col">
+            <h1>Board Game Scheduler</h1>
+            <h2>a better way to play</h2>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="background">
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <h1>Board Game Scheduler</h1>
-            <h4>A Better Way to Play</h4>
+            <h3>Our Mission:</h3>
+            <!-- <h3>Play your favorite games, with your favorite people.</h3> -->
+            <h4>
+              To provide a convenient way to play your favorite games, with your
+              favorite people.
+            </h4>
           </div>
         </div>
       </div>
       <div class="container button">
         <div class="row">
-          <div class="col-xs-6 mx-auto">
+          <!-- <div class="col-xs-6 mx-auto">
             <button
               type="button"
               class="btn btn-primary btn-event"
@@ -47,7 +64,7 @@
             >
               Create Event
             </button>
-          </div>
+          </div> -->
           <div class="col-xs-6 mx-auto">
             <button
               type="button"
@@ -55,7 +72,7 @@
               data-toggle="modal"
               data-target="#accountModal"
             >
-              Create Account
+              Sign Up
             </button>
           </div>
         </div>
@@ -228,7 +245,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="row missionRow">
         <div class="col-md-12 missionCol">
           <h3>Our Mission:</h3>
@@ -238,12 +255,20 @@
           </h4>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <footer class="site-footer">
       <div class="container">
-        <div class="row text-center">
-          <div class="col">
+        <div class="row">
+          <div class="col-4 col-sm-2 offset-1">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Create Event</a></li>
+              <li><a href="FeaturedGames.html">Featured Games</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-5 text-center">
             <h5>Contact Information</h5>
             <a role="button" class="btn btn-link" href="tel:+15555555555">
               <i class="fa fa-phone fa-lg text-primary"></i> 1-555-555-5555</a
@@ -257,7 +282,7 @@
               contactbgs@gmail.com
             </a>
           </div>
-          <div class="col">
+          <div class="col-sm-4 text-center">
             <h5>Social</h5>
             <a
               class="btn btn-social-icon btn-instagram"
@@ -273,6 +298,9 @@
               class="btn btn-social-icon btn-twitter"
               href="http://twitter.com/"
               ><i class="fa fa-twitter"></i
+            ></a>
+            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"
+              ><i class="fa fa-youtube"></i
             ></a>
           </div>
         </div>

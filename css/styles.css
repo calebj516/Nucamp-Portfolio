@@ -1,9 +1,8 @@
-body,
-html {
+/* .background {
   height: 100%;
-}
+} */
 
-body {
+.background {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../background-image.jpg");
   height: 100%;
@@ -11,14 +10,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-/* .background {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../background-image.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 .background .text-center {
   color: white;
@@ -28,20 +19,41 @@ body {
 
 .button {
   margin-top: 5%;
+  padding-bottom: 5%;
 }
 
-.missionRow {
+/* .missionRow {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
   margin-bottom: 40px;
-}
+} */
 
 .missionCol {
   color: white;
 }
 
 .site-footer {
-  color: white;
-  margin-top: 30px;
+  background-color: rgb(214, 212, 212);
+  /* margin-top: 30px; */
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+header {
+  background-color: rgb(214, 212, 212);
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+  border: solid #8a8a8d;
+}
+
+.gameCarouselImg img {
+  width: auto;
+  height: 400px;
+  max-height: 400px;
 }
