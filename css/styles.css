@@ -54,3 +54,7 @@ header {
 .belowCarousel {
   padding: 25px;
 }
+
+.row-content {
+  margin: 50px 25px 50px 100px;
+}
