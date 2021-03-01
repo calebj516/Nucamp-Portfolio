@@ -27,7 +27,7 @@
   </head>
 
   <body>
-    <header class="jumbotron jumbotron-fluid">
+    <!-- <header class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="row">
           <div class="col-4 col-sm-3 col-md-2 align-self-center">
@@ -39,103 +39,140 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 mx-auto">
-          <div
-            id="homeCarousel"
-            class="carousel slide carousel-fade"
-            data-ride="carousel"
+    <nav class="navbar navbar-dark navbar-expand-sm sticky-top bg-dark">
+      <a class="navbar-brand" href="index.html"
+        ><img
+          src="images/dice.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+          loading="lazy"
+        />
+        Board Game Scheduler</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" href="#"
+            >Featured Games <span class="sr-only">(current)</span></a
           >
-            <ol class="carousel-indicators">
-              <li
-                data-target="#homeCarousel"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li data-target="#homeCarousel" data-slide-to="1"></li>
-              <li data-target="#homeCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active gameCarouselImg">
-                <img
-                  src="./Images/Settlers of Catan.jpeg"
-                  class="d-block w-100"
-                  alt="Settlers of Catan board game"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Settlers of Catan</h5>
-                  <p>
-                    Nulla vitae elit libero, a pharetra augue mollis interdum.
-                  </p>
+          <a class="nav-link" href="CreateEvent.html">Create Event</a>
+          <a class="nav-link" href="ContactUs.html">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="background">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <div
+              id="homeCarousel"
+              class="carousel slide carousel-fade"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#homeCarousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#homeCarousel" data-slide-to="1"></li>
+                <li data-target="#homeCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active gameCarouselImg">
+                  <img
+                    src="./Images/Settlers of Catan.jpeg"
+                    class="d-block w-100"
+                    alt="Settlers of Catan board game"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Settlers of Catan</h5>
+                    <p>
+                      Nulla vitae elit libero, a pharetra augue mollis interdum.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item gameCarouselImg">
+                  <img
+                    src="./Images/risk.jpg"
+                    class="d-block w-100"
+                    alt="Risk board game"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Risk</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item gameCarouselImg">
+                  <img
+                    src="./Images/Monopoly.jpg"
+                    class="d-block w-100"
+                    alt="Monopoly board game"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Monopoly</h5>
+                    <p>
+                      Praesent commodo cursus magna, vel scelerisque nisl
+                      consectetur.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="carousel-item gameCarouselImg">
-                <img
-                  src="./Images/risk.jpg"
-                  class="d-block w-100"
-                  alt="Risk board game"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Risk</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item gameCarouselImg">
-                <img
-                  src="./Images/Monopoly.jpg"
-                  class="d-block w-100"
-                  alt="Monopoly board game"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Monopoly</h5>
-                  <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
-                  </p>
-                </div>
-              </div>
+              <a
+                class="carousel-control-prev"
+                href="#homeCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#homeCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <a
-              class="carousel-control-prev"
-              href="#homeCarousel"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#homeCarousel"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center belowCarousel">
-          <h2>
-            Need some inspiration? Choose from one of the three classic games
-            above!
-          </h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center belowCarousel">
+            <h2>
+              Need some inspiration? Choose from one of the three classics
+              above!
+            </h2>
+          </div>
         </div>
       </div>
     </div>

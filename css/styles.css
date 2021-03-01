@@ -14,16 +14,17 @@
 .background .text-center {
   color: white;
   filter: brightness(150%);
-  margin-top: 20%;
+  /* margin-top: 10%; */
 }
 
 .button {
-  margin-top: 5%;
+  margin-top: 2.5%;
   padding-bottom: 5%;
 }
 
-.missionCol {
-  color: white;
+.home {
+  margin-top: 20%;
+  margin-bottom: 5%;
 }
 
 .site-footer {
@@ -52,9 +53,14 @@ header {
 }
 
 .belowCarousel {
-  padding: 25px;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 .row-content {
   margin: 50px 25px 50px 100px;
+}
+
+#homeCarousel {
+  margin-top: 50px;
 }
