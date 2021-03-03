@@ -18,7 +18,7 @@
 }
 
 .button {
-  margin-top: 2.5%;
+  margin-top: 0.5%;
   padding-bottom: 5%;
 }
 
@@ -63,4 +63,18 @@ header {
 
 #homeCarousel {
   margin-top: 50px;
+}
+
+#eventForm {
+  color: white;
+  padding: 50px;
+}
+
+.eventFormTitle {
+  padding-bottom: 10px;
+}
+
+#contactForm {
+  color: white;
+  padding: 25px;
 }

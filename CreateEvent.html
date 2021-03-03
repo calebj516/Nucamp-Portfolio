@@ -66,7 +66,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link" href="FeaturedGames.html">Featured Games</a>
           <a class="nav-link active" href="#"
             >Create Event <span class="sr-only">(current)</span></a
@@ -76,59 +76,75 @@
       </div>
     </nav>
 
-    <div class="container">
-      <form id="eventForm">
-        <div class="form-group row">
-          <label class="col-sm-6 col-form-label">Number of Players </label>
-          <div class="col">
-            <select
-              class="form-control custom-select"
-              name="numPlayers"
-              id="numPlayers"
-            >
-              <option>Select...</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
+    <div class="background" id="eventForm">
+      <div class="container">
+        <div class="row row-content">
+          <div class="col-12">
+            <h2>Create an Event</h2>
+          </div>
+          <div class="col-md-8">
+            <form>
+              <div class="form-group row">
+                <label class="col-md-2 col-form-label">Players</label>
+                <div class="col">
+                  <select
+                    class="form-control custom-select"
+                    name="numPlayers"
+                    id="numPlayers"
+                  >
+                    <option>Select...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="selectGame" class="col-md-2 col-form-label"
+                  >Game</label
+                >
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="selectGame"
+                    placeholder="Enter Game"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="date" class="col-md-2 col-form-label">Date</label>
+                <div class="col">
+                  <input class="form-control" type="date" id="date" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="startTime" class="col-md-2 col-form-label"
+                  >Start Time:</label
+                >
+                <div class="col">
+                  <input type="time" id="startTime" name="startTime" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="offset-md-2 col-md-10">
+                  <button type="submit" class="btn btn-primary">
+                    Make Reservation
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-        <div class="form-group row">
-          <label for="selectGame" class="col-sm-6 col-form-label">Game</label>
-          <div class="col">
-            <input
-              type="text"
-              class="form-control"
-              id="selectGame"
-              placeholder="Enter Game"
-            />
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="date" class="col-sm-6 col-form-label">Date</label>
-          <div class="col">
-            <input class="form-control" type="date" id="date" />
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="startTime" class="col-sm-6 col-form-label"
-            >Start Time:</label
-          >
-          <div class="col">
-            <input type="time" id="startTime" name="startTime" />
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Make Reservation</button>
-      </form>
+      </div>
     </div>
-    <div class="modal-footer"></div>
 
     <footer class="site-footer">
       <div class="container">
